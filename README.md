@@ -1,4 +1,5 @@
-This repository curls Taiwan open data of coronvirus weekly data
+This repository curls Taiwan open data website for coronvirus infected people stats
 
 Reference:
-- [open data url](https://data.gov.tw/dataset/118038#r1)
+- [weekly data](https://data.cdc.gov.tw/dataset/aagstable-weekly-19cov)
+- [monthly data](https://data.cdc.gov.tw/dataset/aagstable-19cov)
