@@ -77,12 +77,12 @@ func aggregate(data []covid) (map[int]int, map[string]int, int) {
 
 	for _, d := range data {
 		if _, ok := weekCount[d.Week]; !ok {
-			weekCount[d.Week] = 1
+			weekCount[d.Week] = d.ConfirmedCount
 		} else {
 			weekCount[d.Week] += d.ConfirmedCount
 		}
 		if _, ok := countyCount[d.County]; !ok {
-			countyCount[d.County] = 1
+			countyCount[d.County] = d.ConfirmedCount
 		} else {
 			countyCount[d.County] += d.ConfirmedCount
 		}
