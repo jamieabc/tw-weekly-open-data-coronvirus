@@ -43,7 +43,7 @@ func main() {
 	}
 
 	var arr []covid
-	_ = json.Unmarshal([]byte(string(data)), &arr)
+	_ = json.Unmarshal(data, &arr)
 
 	weekCount, countyCount, total := aggregate(arr)
 	var weeks []int
